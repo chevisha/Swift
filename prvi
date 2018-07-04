@@ -1,0 +1,15 @@
+var word = readLine(strippingNewline: true)!
+var listt = [ "a" : 0 ]
+for c in word {
+  if (listt[String(c)] != nil) {
+      let vrednost = listt[String(c)]
+      listt[String(c)] = vrednost! + 1
+  }
+  else { listt[String(c)] = 1 }
+}
+
+for (a, b) in listt {
+  if b > 0 {
+    print("\(a) : \(b)")
+  }
+ }
